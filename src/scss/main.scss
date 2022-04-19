@@ -1,0 +1,72 @@
+@import "./fonts";
+@import './colors';
+@import './header';
+@import './search';
+@import './playlists';
+@import './filter';
+@import './filter-list';
+@import './footer';
+@import './user/create-account';
+@import './user/sing-in';
+@import './filter/checked-list';
+@import './user/modal';
+@import './card/card';
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Noto Serif", serif;
+	font-family: "Roboto", sans-serif;
+	color: $mainBlack;
+}
+body{
+	min-width: 100vh;
+}
+
+main{
+	margin-top: 100px;
+	padding-bottom: 320px;
+	background-color: $mainBlack;
+	@media (max-width:700px) {
+		min-width: 900px;	
+	}
+}
+
+.user__icon {
+	fill: rebeccapurple;
+	width: 20px;
+	height: 20px;
+}
+
+.container {
+	max-width: 1480px;
+	margin: 0 auto;
+	padding:  0px 10px 0px 10px;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+li{
+	list-style: none;
+}
+img{
+	font-size: 0px;
+}
+
+.back__btn{
+	border: none;
+	background: transparent;
+	font-size: 16px;
+	cursor: pointer;
+	color: gray;
+	margin-top: 10px;
+	text-decoration: underline;
+	@media (max-width:880px) {
+		margin-top: 20px;
+		font-size: 32px;
+	}
+}
+

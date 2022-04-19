@@ -1,0 +1,219 @@
+.header {
+	background-color: white;
+	position: fixed;
+	top:0px;
+	left:0px;
+	z-index: 10;
+	width: 100%;
+
+		&__navigation{
+			max-width: 340px;
+			width: 100%;
+			@media (max-width:700px) {
+				display: none;
+			}
+		}
+		&__row {
+			
+			display: flex;
+			width: 100%;
+			min-height: 100px;
+			align-items: center;
+			justify-content: space-between;
+			@media (max-width:700px) {
+				min-height: 150px;
+				display: flex;
+			}
+			
+		}
+
+		&__logo {
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+			& img{
+				width: 50px;
+				height: 50px;
+
+			}
+			& h1{
+				font-size: 24px;			
+				padding-left: 20px;
+				@media (max-width:700px) {
+					font-size: 36px;
+				}
+			}
+		}
+
+		&__nav-list {
+			max-width: 340px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			padding: 0px 20px 0px 20px;
+		
+		}
+
+		&__nav-item {
+			font-size: 18px;
+			white-space: nowrap;
+			transform: scale(1);
+			transition: 0.05s ease;
+			@media (max-width:700px) {
+				font-size: 28px;
+				margin-right: 30px;
+			}
+		}
+		&__nav-item:hover{
+			font-weight: 600;
+		}
+
+		&__user-block {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			position: relative;
+			@media (max-width:700px) {
+				
+				&-burger{
+				
+
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					width: 60px;
+					height: 50px;
+					margin-right: 10px;
+					cursor: pointer;
+					span:nth-child(1){
+						display: block;
+						width: 60px;
+						height: 10px;
+						background-color: $mainBlack;
+					}
+					span:nth-child(2){
+						display: block;
+						width: 60px;
+						height: 10px;
+						background-color: $mainBlack;
+					}
+					span:nth-child(3){
+						display: block;
+						width: 60px;
+						height: 10px;
+						background-color: $mainBlack;
+					}
+				}
+			}
+		}
+		&__account{
+			display: flex;
+			align-items: center;
+
+			position: relative;
+			& :hover{
+				transition: all 0.1s ease;
+				opacity: 0.7;
+			}
+			@media (max-width:700px) {
+				display: none;
+			}
+		}
+		&__account::after{
+			content: '';
+			background-color: black;
+			width: 1px;
+			height: 50px;
+			margin-left: 10px;
+		}
+			
+		&__create {
+			margin-right: 15px;
+			
+			font-size: 20px;
+			font-weight: 400;
+			cursor: pointer;
+			white-space: nowrap;
+			color: black;
+			
+			&::after {
+				content: '|';
+				position: absolute;
+				left: 140px;
+				cursor:auto;
+			}
+		}
+		
+		
+
+		&__sign-in {
+			font-size: 20px;	
+			
+			cursor: pointer;
+			white-space: nowrap;
+			color: black;
+		}
+
+		&__user-icon {
+			width: 50px;
+			height: 50px;
+			cursor: pointer;
+			margin-left: 5px;
+			
+		}
+
+		&__card {
+			display: flex;
+			align-items: center;
+			position: relative;
+			& :hover{
+				transition: all 0.1s ease;
+				opacity: 0.7;
+				.header__card-count{
+					transform: scale(1.05);
+				}
+			}
+			@media (max-width:700px) {
+				padding-right: 30px;
+				margin-left: 30px;
+			}
+		}
+
+		&__card-icon {
+			width: 50px;
+			height: 50px;
+			cursor: pointer;
+			@media (max-width:700px) {
+				width: 70px;
+				height: 70px;
+			}
+		}
+
+		&__card-count {
+			width: 25px;
+			height: 25px;
+
+			background-color: #E5EA00;
+			border-radius: 100%;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			position: absolute;
+			top: 28px;
+			right: -8px;
+			z-index: -1;
+			cursor: pointer;
+			@media (max-width:700px) {
+				width: 35px;
+				height: 35px;
+
+				top: 42px;
+				right: 20px;
+
+				font-size: 22px;
+			}
+		}
+}

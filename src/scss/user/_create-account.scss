@@ -1,0 +1,150 @@
+
+
+@mixin display-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	border: none;
+	outline: none;
+}
+
+.create-account {
+	max-width: 660px;
+	margin: 0 auto;
+	margin-top: 10%;
+	box-shadow: 0px 5px 10px 2px rgb(213, 213, 213);
+	@media (max-width:880px) {
+		max-width: 880px;
+		margin: 0 auto;
+		box-shadow: none;
+		min-width: 620px;
+	}
+	&__countainer {
+		position: relative;
+		min-height: 520px;
+		background: white;
+		padding: 50px 120px;
+		
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		@media (max-width:880px) {
+			margin-top: 100px;
+		}
+	}
+	.create-account__logo img{
+		width: 30px;
+		@media (max-width:880px) {
+			width: 80px;
+		}
+	}	
+	&__logo {
+		cursor: pointer;
+		position: absolute;
+		left: 58px;
+		top: 12px;
+
+		display: flex;
+		align-items: center;
+		& span{
+			padding-left: 12px;
+			font-weight: 700;
+			font-size: 18px;
+			@media (max-width:880px) {
+				font-size: 32px;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 28px;
+		font-weight: 500;
+		@media (max-width:880px) {
+			text-align: center;
+			white-space: nowrap;
+			font-size: 62px;
+		}
+	}
+
+	&__login {
+		@include display-center;
+	}
+	&__password {
+		@include display-center;
+
+	}
+	&__subtitle {
+		font-size: 16px;
+
+		padding-top: 20px;
+		padding-bottom: 15px;
+
+		@media (max-width:880px) {
+			padding-top: 40px;
+			font-size: 44px;
+		}
+	}
+
+	&__inputs {
+
+		& input{
+			width: 420px;
+			height: 40px;
+			border: 1px solid black;
+			padding: 12px 18px;
+			font-size: 16px;
+			@media (max-width:880px) {
+				width: 600px;
+				height: 80px;
+				font-size: 28px;
+			}
+		}
+	}
+
+	&__email-block {
+		padding-bottom: 30px;
+	}
+
+	&__username-block {
+	}
+
+	
+
+	&__password-block {
+		padding-bottom: 30px;
+
+	}
+
+	&__password-confirm-block {
+	}
+
+	&__btn-confim {
+		padding-top: 15px;
+		@media (max-width:880px) {
+			padding-top: 30px;
+		}
+		& input{
+			padding: 10px 15px;
+
+			background: transparent;
+			border: 1px solid black;
+
+			cursor: pointer;
+			font-size: 16px;
+			@media (max-width:880px) {
+				padding: 15px 20px;
+				font-size: 32px;
+			}
+			&:hover{
+				background-color: $confirmBtnHover;
+			}
+		}
+	}
+}

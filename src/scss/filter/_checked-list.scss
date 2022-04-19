@@ -1,0 +1,51 @@
+.checked-list{
+	max-width: 800px;
+	min-height: 60px;
+	margin: 0 auto;
+	background-color: white;
+
+	margin-top: 50px;
+	margin-bottom: 5px;
+	
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media (max-width:700px) {
+		min-height: 100px;
+	}
+
+	&__row{
+		display: flex;
+		align-items: center;	
+		padding: 5px;
+		@media (max-width:700px) {
+			overflow-x: scroll;
+		}
+		overflow: hidden;
+	}
+	.checked-item{
+		font-size: 18px;
+		font-weight: 500;
+
+		margin-left: 24px;
+		padding: 7px;
+
+		background-color:transparent;
+		border:1px solid black;
+		border-radius: 20px;
+		@media (max-width:700px) {
+			font-size: 28px;
+		}
+		span{
+			padding: 5px;
+			margin-left: 6px;
+		}
+		&:hover{
+			cursor: pointer;
+			background-color:rgb(230, 230, 230);
+
+		}
+		
+	}
+}

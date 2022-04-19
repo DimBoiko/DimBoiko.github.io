@@ -1,0 +1,78 @@
+@import './colors';
+.filter__select-list{
+	@media (max-width:700px) {
+		margin-top: 50px;
+	}
+}
+.filter-list {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	
+	&__label {
+		padding: 0px 15px 0px 15px;
+		min-width: 335px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		&:hover{
+			background-color: $filterHover;
+		}
+		@media (max-width:700px) {
+			min-width: 250px;
+		}
+		@media (max-width:400px) {
+			min-width: 200px;
+		}
+	}
+	&__label+&__label{
+	}
+
+
+	&__input {
+		margin-bottom: 25px;
+		opacity: 0;
+		cursor: auto;
+		@media (max-width:700px) {
+			margin-bottom: 65px;
+		}
+	}
+	&__text{
+		font-size: 18px;
+		color: white;
+		@media (max-width:700px) {
+			font-size: 32px;
+		}
+	}
+}
+
+.fake-checkbox {
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 50%;
+	margin-right: 10px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition:all 0.3s ease;
+	@media (max-width:700px) {
+		width: 40px;
+		height: 40px;
+	}
+
+}
+.checked{
+	width: 20px;
+	height: 20px;
+	
+	background-color: white;
+	border: 1px solid white;
+	@media (max-width:700px) {
+		width: 40px;
+		height: 40px;
+	}
+}

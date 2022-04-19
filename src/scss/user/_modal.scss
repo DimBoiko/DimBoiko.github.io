@@ -1,0 +1,76 @@
+.modal{
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	background-color: rgba($color: #535353, $alpha: 0.6);
+
+}
+.modal__close{
+	display: flex;
+	font-size: 36px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.header__user-block-modal{
+	max-width: 100%;
+	background-color: white;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 60px;
+}
+.header__account-modal{
+	display: flex;
+	align-items: center;
+}
+.header__user-icon-modal{
+	width: 120px;
+	height: 120px;
+	cursor: pointer;
+
+}
+.header__create-modal{
+	position: relative;
+	a{
+		font-size: 32px;
+	}
+	margin-right: 40px;
+	&::after{
+		content: '';
+		display: block;
+		position: absolute;
+		background-color:black;
+		width: 2px;
+		height: 50px;
+		top: -10%;
+		right: -10%;
+	}
+}
+.header__sign-in-modal{
+	a{
+		font-size: 32px;
+	}
+}
+
+
+.header__navigation-modal{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+
+}
+.header__nav-list-modal{
+	display: flex;
+}
+.header__nav-item-modal{
+	font-size: 28px;
+	margin-top: 5px;
+	margin-left: 20px;
+}
