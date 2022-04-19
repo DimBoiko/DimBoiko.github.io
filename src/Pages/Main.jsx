@@ -31,8 +31,6 @@ const Main = () => {
 		'display' : 'none'
 	}
 
-	
-
 	return (
 		<div className="wrapper">
 			<MainProvider>
