@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.25260d4c.css",
+    "main.js": "/static/js/main.984758d8.js",
+    "static/media/track.mp3": "/static/media/track.752619df51761a6946f6.mp3",
+    "static/media/electronic.jpg": "/static/media/electronic.62fade88b63b11c53d38.jpg",
+    "static/media/smoke.jpg": "/static/media/smoke.50c8fd36c212229cc41e.jpg",
+    "static/media/rnb.jpg": "/static/media/rnb.7479aa745de664b03b48.jpg",
+    "static/media/rock.jpg": "/static/media/rock.35f89c1c6b60a329b385.jpg",
+    "static/media/100gecs.jpg": "/static/media/100gecs.b1bf6bfd6e409e775cb3.jpg",
+    "static/media/trap.jpg": "/static/media/trap.95b4257a7097b81d2606.jpg",
+    "static/media/headphones.png": "/static/media/headphones.366d5c7dbdce595a8ca8.png",
+    "static/media/dollar.svg": "/static/media/dollar.a1bf3e17534c45c5a44b.svg",
+    "static/media/user.svg": "/static/media/user.deaa1d01ebda3f20a6db1882dbde04b4.svg",
+    "index.html": "/index.html",
+    "static/media/arrow.svg": "/static/media/arrow.0665c62c288d8cc14cb0.svg",
+    "main.25260d4c.css.map": "/static/css/main.25260d4c.css.map",
+    "main.984758d8.js.map": "/static/js/main.984758d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25260d4c.css",
+    "static/js/main.984758d8.js"
+  ]
+}
